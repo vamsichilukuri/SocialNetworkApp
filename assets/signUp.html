@@ -28,40 +28,52 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </head>
   <body>
+        <!-- main container -->
     <div class="container">
+            <!-- input field block -->
       <div class="wrapper">
+                <!-- sign up header -->
         <h1>
           Sign Up
         </h1>
-        <form>
+        <form method="POST">
+                    <!-- User profile pic block -->
           <div class="inputfield">
             <label>Profile Photo</label>
             <input type="file" class="input" id="profile-photo" required />
           </div>
+                    <!-- user profile ERROR block -->
           <div class="propic-error">
-            <span>Enter choose image</span>
+            <span> choose image</span>
           </div>
+                    <!-- user name block -->
           <div class="inputfield">
             <label>User Name</label>
             <input type="text" class="input" id="user-name" required />
           </div>
+                    <!-- user name ERROR block -->
           <div class="name-error">
-            <span>Enter fill your Name</span>
+            <span> fill your Name</span>
           </div>
+                    <!-- user password block -->
           <div class="inputfield">
             <label>Password</label>
             <input type="password" class="input" id="password" required />
           </div>
+                    <!-- user password error block -->
           <div class="password-error">
-            <span>Enter fill your Password</span>
+            <span> fill your Password</span>
           </div>
+                    <!-- confirm password -->
           <div class="inputfield">
             <label>Confirm Password</label>
             <input type="password" class="input" id="c-password" required />
           </div>
+                    <!-- c-password ERROR block -->
           <div class="c-password-error">
             <span>Password not Matched</span>
           </div>
+                    <!-- User Gender block -->
           <div class="inputfield">
             <label>Gender</label>
             <div class="custom_select">
@@ -72,32 +84,41 @@
               </select>
             </div>
           </div>
+                    <!-- user gender ERROR block -->
           <div class="gender-error">
             <span>Select your Gender</span>
           </div>
+                    <!-- User Date of Birth Block -->
           <div class="inputfield">
             <label>Date Of Birth</label>
             <input type="text" class="input" id="datepicker" required />
           </div>
+                    <!-- User DOB ERROR block -->
           <div class="dob-error">
             <span>Enter your DOB</span>
           </div>
+                    <!-- User Email block -->
           <div class="inputfield">
             <label>Email Address</label>
             <input type="text" class="input" id="email" required />
           </div>
+                    <!-- User email ERROR block -->
           <div class="email-error">
             <span>Fill your Email</span>
           </div>
+                    <!-- user phone number block -->
           <div class="inputfield">
             <label>Phone Number</label>
             <input type="text" class="input" id="number" required />
           </div>
+                    <!-- user phone number ERROR block -->
           <div class="number-error">
             <span>Fill your Number</span>
           </div>
+                    <!-- User Address block -->
           <div class="inputfield">
             <label>Address</label>
+                        <!-- user village feild -->
             <input
               type="text"
               class="input"
@@ -105,6 +126,7 @@
               placeholder="Village"
               required
             />
+                        <!-- user mandal feild -->
             <input
               type="text"
               class="input"
@@ -112,6 +134,7 @@
               placeholder="Mandal"
               required
             />
+                        <!-- User district feild -->
             <input
               type="text"
               class="input"
@@ -120,31 +143,39 @@
               required
             />
           </div>
+                    <!-- user village ERROR block -->
           <div class="village-error">
             <span>Fill your Village</span>
           </div>
+                    <!-- user mandal ERROR block -->
           <div class="mandal-error">
             <span>Fill your Mandal</span>
           </div>
+                    <!-- user district ERROR block -->
           <div class="district-error">
             <span>Fill your District</span>
           </div>
+                    <!-- User Post code Block -->
           <div class="inputfield">
             <label>Postal Code</label>
             <input type="text" class="input" id="post-code" required />
+                        <!-- user post code ERROR block -->
             <div class="post-code-error">
               <span>Fill your Post Code</span>
             </div>
           </div>
+                    <!-- user Terms and Conditions block -->
           <div class="inputfield terms">
             <label class="check">
               <input type="checkbox" value="agree" id="conditions" required />
             </label>
             <p>Agreed to terms and conditions</p>
           </div>
+                    <!-- user Terms and Conditions ERROR block -->
           <div class="conditions-error">
             <span>accept terms and condition</span>
           </div>
+                    <!-- user details submit button -->
           <div class="inputfield">
             <button type="button" class="btn btn-success" onclick="getData()">
               Register
