@@ -76,14 +76,12 @@
 
 #new-posts {
   margin: 5px;
-  border: 1px solid gray;
 }
 /* #new-posts .post-block {
   margin: 5px;
   border: 1px red;
 } */
 #new-posts .header-block {
-  margin: 10px;
   padding: 10px;
   width: 100%;
   background-color: rgb(122, 122, 122);
@@ -104,10 +102,8 @@
   max-width: 100%;
   padding:10px;
   background-color: rgb(241,240,241);
-  /* margin: 5px auto; */
 }
 #new-posts .post-block .image-block img {
-  border-bottom: 1px solid blue;
   padding: 20px;
   width: 100%;
   margin: 5px;
