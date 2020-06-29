@@ -81,7 +81,7 @@
                 id="sigup-btn"
                 class="btn btn-success"
                 type="button"
-                onclick="signUpSubmit();"
+                onclick="signUpSubmit()"
               >
                 Sign Up <i class="fas fa-user-plus"></i>
               </button>
@@ -111,6 +111,9 @@
         </div>
       
     <!-- Script Files -->
+      <script> function signUpSubmit(){
+      location.replace("./assets/signUp.html")
+        }</script>
     <script src="./js/login.js"></script>
     <script src="./js/signUp.js"></script>
   </body>
