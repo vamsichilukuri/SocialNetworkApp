@@ -103,6 +103,7 @@
   border: 1px solid;
   max-width: 100%;
   padding:10px;
+  background-color: rgb(241,240,241);
   /* margin: 5px auto; */
 }
 #new-posts .post-block .image-block img {
