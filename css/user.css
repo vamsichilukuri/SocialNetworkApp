@@ -209,7 +209,7 @@
     overflow: hidden;
     padding: 10px;
   }
-  #new-posts .post-block .image-block img {
+  #new-posts .post-block .img-block img {
     width: 100%;
   }
 }
