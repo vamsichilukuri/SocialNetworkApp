@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to right, red, orange);
+}
+.wrapper {
+  max-width: 400px;
+  width: 100%;
+  background: rgb(233, 233, 233);
+  /* margin: 20px auto; */
+  box-shadow: 3px 3px 10px rgb(3, 3, 3);
+  margin-top: 10%;
+  /* padding: 20px; */
+  border-radius: 20px;
+}
+.login-block {
+  margin: 20px;
+}
+form {
+  /* margin: 15px; */
+  padding: 25px;
+  position: relative;
+}
+.wrapper form {
+  width: 90%;
+}
+.wrapper form .inputfield {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .user-pro-pic img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -180px;
+  left: 30%;
+}
+i {
+  font-size: 20px;
+}
+.wrapper form .inputfield input {
+  margin: 5px auto;
+  width: 70%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper form .inputfield #name {
+  margin-left: 25px;
+}
+.wrapper form .links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wrapper form .inputfield p {
+  font-size: 14px;
+  color: #757575;
+}
+.wrapper form .inputfield .check {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper form .inputfield .check input[type="checkbox"] {
+  position: absolute;
+  top: -9px;
+  left: -5px;
+  width: 15px;
+  height: 15px;
+}
+.wrapper form .buttons {
+  display: flex;
+  flex-direction: column;
+}
+/* error-block */
+.main-pop {
+  background-color: rgba(0, 0, 0, 0.589);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  top: 0;
+  display: none;
+}
+#pop-up-block {
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0px 2px 20px 0px black;
+}
+.pop-head {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ed6663;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0px 1px 10px 0px black;
+}
+
+.pop-body {
+  padding: 20px 10px 10px 10px;
+  font-size: large;
+  font-weight: 800;
+}
+.pop-body li {
+  text-align: center;
+  list-style: none;
+  margin: 5px;
+}
+.pop-head span {
+  cursor: pointer;
+  background: none;
+  font-size: 25px;
+  color: white;
+  position: relative;
+  top: -10px;
+}
+/* .error-block {
+  border: 1px solid red;
+  position: absolute;
+  left: 35%;
+  background-color: rgb(252, 137, 137);
+  color: red;
+  padding: 10px;
+} */
+.login-header {
+  background-color: gray;
+  text-align: center;
+  padding: 5px;
+  color: white;
+  border-radius: 10px;
+}
+#hide2 {
+  display: none;
+}
+.user-name-error {
+  display: none;
+  color: red;
+  font-weight: bold;
+}
+.password-error {
+  display: none;
+  color: red;
+  font-weight: bold;
+}
+@media (max-width: 770px) {
+  .wrapper {
+    margin-top: 25%;
+  }
+  .wrapper form .inputfield label {
+    margin-bottom: 5px;
+  }
+  .wrapper form .inputfield.terms {
+    flex-direction: row;
+  }
+}
+@media (max-width: 420px) {
+  .wrapper .user-pro-pic img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -130px;
+    left: 30%;
+  }
+  .wrapper form .inputfield #name {
+    margin-left: 19px;
+  }
+}
