@@ -118,6 +118,7 @@
   border-top: 1px solid #ccc;
   border-bottom: 1px solid;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    overflow-wrap: break-word;
 }
 #new-posts .post-block .opt-block {
   background-color: whitesmoke;
