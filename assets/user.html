@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socila network</title>
+    <link rel="stylesheet" href="../css/user.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand text-white" href="#">LOGO</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item profile-link">
+            <a class="nav-link text-white" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Messages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">notifications</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!--
+              
+              user data will be add dinamically from the server data
+            
+            -->
+    <div class="container-fluid main">
+      <div class="row">
+        <div class="col-3 col-lg-3 sticky-top" id="user-details">
+          <div class="user-id">
+            <div class="user-img">
+              <img src="../image/kid11.JPG" alt="" />
+            </div>
+            <div class="user-info">
+              <div class="name">
+                <h4>Vamsi Chilukuri</h4>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="more-details">
+            <div class="user-contact">
+              <p><b>Contact</b> : 9666983676</p>
+            </div>
+            <div class="user-email">
+              <p><b>Email</b> : chilukurivamsi3697@gmail.com</p>
+            </div>
+            <!-- <hr /> -->
+            <div class="user-age">
+              <p><b>Age</b> : 23</p>
+            </div>
+            <!-- <hr /> -->
+            <div class="user-age">
+              <p><b>Gender</b> : Male</p>
+            </div>
+            <!-- <hr /> -->
+            <div class="user-address">
+              <b>Address : </b>
+              <ul>
+                <li>panguluru</li>
+                <li>panguluru(m,p)</li>
+                <li>prakasam(distric)</li>
+              </ul>
+            </div>
+            <hr />
+            <div class="logout-btn">
+              <button class="btn btn-danger" onclick="logout()">Logout</button>
+            </div>
+          </div>
+        </div>
+        <!-- user posts block -->
+        <div class="col-sm-12 col-lg-7 col-12" id="user-posts">
+          <div class="block1">
+            <div class="text-area">
+              <input type="text" placeholder="Write somthing..?" id="article" />
+              <input type="file" id="file" />
+              <label for="file" id="u-image" class="btn btn-success"
+                >Upload image</label
+              >
+              <button class="btn btn-primary" onclick="uploadPostNdImage()">
+                Post
+              </button>
+            </div>
+          </div>
+          <hr />
+          <div id="new-posts" class="row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container col" id="mobile-user"">
+    <div class="row">
+      <div class="col">
+        <span id="toggle-btn">X</span>
+        <div class="user-id">
+          <div class="user-img">
+            <img src="../image/kid11.JPG" alt="" />
+          </div>
+          <div class="user-info">
+            <div class="name">
+              <h4>Vamsi Chilukuri</h4>
+            </div>
+          </div>
+          <hr />
+          <div class="more-details">
+            <div class="user-contact">
+              <p><b>Contact</b> : 9666983676</p>
+            </div>
+            <div class="user-email">
+              <p><b>Email</b> : chilukurivamsi3697@gmail.com</p>
+            </div>
+            <!-- <hr /> -->
+            <div class="user-age">
+              <p><b>Age</b> : 23</p>
+            </div>
+            <!-- <hr /> -->
+            <div class="user-age">
+              <p><b>Gender</b> : Male</p>
+            </div>
+            <!-- <hr /> -->
+            <div class="user-address">
+              <b>Address : </b>
+              <ul>
+                <li>panguluru</li>
+                <li>panguluru(m,p)</li>
+                <li>prakasam(distric)</li>
+              </ul>
+            </div>
+            <hr />
+            <div class="logout-btn">
+              <button class="btn btn-danger" onclick="logout()">Logout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- script files -->
+    <script src="../js/user.js"></script>
+    <script>
+      function logout() {
+        location.replace("../index.html");
+      }
+    </script>
+  </body>
+</html>
