@@ -72,7 +72,7 @@ function getData() {
     var conditionsError = document.querySelector(".conditions-error");
     conditionsError.style.display = "block";
   }
-  if (user != "") {
+  if (user.name.length >= 5 && user.password.length >= 5) {
     location.replace("../assets/user.html");
   }
 }
