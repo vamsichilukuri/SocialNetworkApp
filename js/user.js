@@ -1,3 +1,4 @@
+//Demo Data (data gets from the server with ajax call)
 var articles = [
   {
     article:
@@ -65,14 +66,14 @@ var articles = [
     image:
       "https://img.freepik.com/free-photo/pagoda-sunset_181624-4091.jpg?size=338&ext=jpg&uid=A&ga=GA1.2.1561619586.1593240951",
   },
-].reverse();
-
+]
+// iterating Array
 function renderArticels() {
   for (let i = 0; i < articles.length; i++) {
     addData(articles[i]);
   }
 }
-
+// Injecting data on Dynamic tags (DHTML)
 function addData(data) {
   const day = new Date().getDate();
   const month = new Date().getMonth();
@@ -104,15 +105,15 @@ function addData(data) {
   const imgTag = $("<img>").attr("src", data.image);
   imgTag.addClass("pic");
   imgBlock.append(imgTag);
-
   const pTag = $("<p></p>").addClass("article");
   pTag.text(data.article);
+  
   articleBlock.append(pTag);
   optBlock.append(li1, li2, li3);
   divTag.append(imgBlock, articleBlock, optBlock);
   $("#new-posts").prepend(header, divTag);
 }
-
+// user new post selectors
 function uploadPostNdImage() {
   var obj = {};
   obj.article = $("#article").val();
@@ -132,7 +133,3 @@ document.querySelector(".profile-link").addEventListener("click", () => {
 document.querySelector("#toggle-btn").addEventListener("click", () => {
   document.querySelector("#mobile-user").style.display = "none";
 });
-
-// $(document).ready(() => {
-//   $("#mobile.user").style.display = "none";
-// });
