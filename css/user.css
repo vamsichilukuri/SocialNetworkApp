@@ -69,7 +69,14 @@
 #user-posts .block1 .text-area > .btn {
   margin: 10px;
 }
-
+#ads-block {
+  background-color: rgb(85, 84, 84);
+  color: aliceblue;
+  padding: 5px;
+}
+#ads-block img {
+  max-width: 100%;
+}
 /* Dynamic elements css */
 
 #new-posts {
@@ -158,6 +165,9 @@
     display: block;
   }
   #user-details {
+    display: none;
+  }
+   #ads-block {
     display: none;
   }
   /* mobile user */
