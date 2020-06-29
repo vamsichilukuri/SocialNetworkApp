@@ -1,5 +1,5 @@
 var users = [];
-
+// input selectors
 function getData() {
   var user = {};
   user.pic = $("#profile-photo").val();
@@ -14,9 +14,8 @@ function getData() {
   user.district = $("#district").val();
   user.post_code = $("#post-code").val();
   user.conditions = document.getElementById("conditions").checked;
-  console.log(user.gender);
-  console.log(user);
-
+  user.gender = gender;
+ //Error Conditions
   if (user.password.length <= 6 && user.password != user.c_password) {
     alert("please check once");
   }
@@ -76,11 +75,11 @@ function getData() {
     location.replace("../assets/user.html");
   }
 }
-
+//Gender value selector
 function genderData() {
   user.gender = $("#gender").val();
 }
-
+// User DOB picker
 $(document).ready(() => {
   $("#datepicker").datepicker({
     dateFormat: "dd-mm-yy",
