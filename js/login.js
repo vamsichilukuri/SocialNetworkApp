@@ -27,14 +27,14 @@ function loginSubmit() {
     let passwordError = document.querySelector(".password-error");
     passwordError.style.display = "block";
   }
-
+//user input data validation
   if (uname == "admin" && password == "india") {
     location.replace("./assets/user.html");
   } else {
-    // alert("User not found, please login again");
     cl();
   }
 }
+//ERROR pop-up functions
 function cl() {
   var pop = document.querySelector("#pop-up-block");
   pop.style.display = "block";
