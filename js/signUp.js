@@ -81,9 +81,6 @@ function genderData() {
   user.gender = $("#gender").val();
 }
 
-function signUpSubmit() {
-  location.replace("../assets/signUp.html");
-}
 $(document).ready(() => {
   $("#datepicker").datepicker({
     dateFormat: "dd-mm-yy",
