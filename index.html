@@ -20,24 +20,31 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   </head>
   <body>
+      <!-- main container block -->
     <div class="container">
       <div class="wrapper">
+              <!-- login header -->
         <div class="login-header">
           <h2>Login</h2>
           </div>
+                  <!-- form block -->
         <div class="login-block">
         <form>
           <div class="input-box">
+                        <!-- user name or user id input field -->
             <div class="inputfield">
               <i class="fas fa-user"></i>
               <input type="text" name="name" id="name" required />
             </div>
+                        <!-- user name ERROR block -->
             <div class="user-name-error">
               <span>Enter Your Name</span>
             </div>
+                        <!-- user Password block -->
             <div class="inputfield">
               <i class="fas fa-lock"></i>
               <input type="password" name="password" id="pwd" required />
+                           <!-- Show and Hide Passsword icons -->
              <span class="eye" onclick="showHide()"
              >
               <i id="hide1"
@@ -50,14 +57,14 @@
               ></i>
               </span>
             </div>
+                        <!-- Password ERROR block -->
             <div class="password-error">
               <span>Enter Password</span>
             </div>
+                        <!-- Forget Password  -->
             <div class="links">
               <a href="#">Forget Password ?</a>
-              <!-- <br />
-            <input type="checkbox" name="checkbox" id="remember" />
-            Remember me -->
+                            <!-- Remember -->
               <div class="inputfield terms">
                 <label class="check">
                   <input type="checkbox" />
@@ -65,6 +72,7 @@
                 <p>Remember Me</p>
               </div>
             </div>
+                        <!-- User login data submit button -->
             <div class="buttons">
               <button
                 id="login-btn"
@@ -76,7 +84,7 @@
               </button>
 
               <hr />
-
+            <!-- User Sign-up button -->
               <button
                 id="sigup-btn"
                 class="btn btn-success"
