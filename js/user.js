@@ -81,7 +81,7 @@ function addData(data) {
   const divTag = $("<div></div>").addClass("post-block col-12");
   const header = $("<div></div>").addClass("header-block");
   const profileTag = $("<div></div>").addClass("profile");
-  const imgTag1 = $("<img>").attr("src", "../image/kid11.JPG"); //here user image
+  const imgTag1 = $("<img>").attr("src", "../image/kid11.jpg"); //here user image
   const nameTag = $("<span></span>").addClass("profile-name");
   profileTag.append(imgTag1, nameTag);
   nameTag.text(`Vamsi Chilukuri (${time})`);
